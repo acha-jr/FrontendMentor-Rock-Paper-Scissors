@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="dark"></div>
+    <header>
+      <div class="top">
+        <img src="./images/logo.svg" alt="" />
+        <div class="score">
+          <p>SCORE</p>
+          <h1 class="score-value">0</h1>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="game">
+        <img class="triangle" src="./images/bg-triangle.svg" alt="" />
+        <div class="circle rock">
+          <img src="./images/icon-rock.svg" alt="" />
+        </div>
+        <div class="circle paper">
+          <img src="./images/icon-paper.svg" alt="" />
+        </div>
+        <div class="circle scissors">
+          <img src="./images/icon-scissors.svg" alt="" />
+        </div>
+      </div>
+
+      <div class="rules">
+        <h2>RULES</h2>
+        <img id="close" src="./images/icon-close.svg" alt="" />
+        <img src="./images/image-rules.svg" alt="" />
+      </div>
+
+      <div class="step-two" style="display: none">
+        <article class="left">
+          <h3>YOU PICKED</h3>
+          <div class="picked circle-result">
+            <img class="picked-image" src="" alt="" />
+          </div>
+        </article>
+        <article class="right">
+          <h3>THE HOUSE PICKED</h3>
+          <div class="shadow"></div>
+          <div class="computer circle-result">
+            <img class="computer-image" src="" alt="" />
+          </div>
+        </article>
+      </div>
+
+      <div class="step-three">
+        <article>
+          <h1>YOU <span class="win-or-lose"></span></h1>
+          <button>PLAY AGAIN</button>
+        </article>
+      </div>
+    </main>
+    <footer>
+      <div class="rules-button">
+        <h3>RULES</h3>
+      </div>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://github.com/acha-jr" target="_blank">acha.jr</a>.
+      </div>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
