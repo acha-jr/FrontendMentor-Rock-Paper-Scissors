@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="icon"
@@ -11,73 +10,61 @@
       href="./images/favicon-32x32.png"
     />
     <title>Frontend Mentor | Rock, Paper, Scissors</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
   </head>
   <body>
-    <div class="dark"></div>
     <header>
-      <div class="top">
-        <img src="./images/logo.svg" alt="" />
-        <div class="score">
-          <p>SCORE</p>
-          <h1 class="score-value">0</h1>
-        </div>
-      </div>
+      <img src="./images/logo.svg" alt="" />
+      <div class="score">0</div>
     </header>
 
     <main>
       <div class="game">
         <img class="triangle" src="./images/bg-triangle.svg" alt="" />
-        <div class="circle rock">
-          <img src="./images/icon-rock.svg" alt="" />
-        </div>
-        <div class="circle paper">
-          <img src="./images/icon-paper.svg" alt="" />
-        </div>
-        <div class="circle scissors">
+        <div class="paper"><img src="./images/icon-paper.svg" alt="" /></div>
+        <div class="scissors">
           <img src="./images/icon-scissors.svg" alt="" />
         </div>
+        <div class="rock"><img src="./images/icon-rock.svg" alt="" /></div>
       </div>
 
-      <div class="rules">
-        <h2>RULES</h2>
-        <img id="close" src="./images/icon-close.svg" alt="" />
-        <img src="./images/image-rules.svg" alt="" />
-      </div>
-
-      <div class="step-two" style="display: none">
-        <article class="left">
-          <h3>YOU PICKED</h3>
-          <div class="picked circle-result">
-            <img class="picked-image" src="" alt="" />
+      <div class="result">
+        <div class="player">
+          <h2>you picked</h2>
+          <div id="player-result">
+            <img src="" alt="" />
           </div>
-        </article>
-        <article class="right">
-          <h3>THE HOUSE PICKED</h3>
-          <div class="shadow"></div>
-          <div class="computer circle-result">
-            <img class="computer-image" src="" alt="" />
-          </div>
-        </article>
-      </div>
+        </div>
 
-      <div class="step-three">
-        <article>
-          <h1>YOU <span class="win-or-lose"></span></h1>
+        <div class="play-again">
+          <h1 class="result-announce"></h1>
           <button>PLAY AGAIN</button>
-        </article>
+        </div>
+
+        <div class="computer" style="position: relative">
+          <h2>the house picked</h2>
+          <div class="load"></div>
+          <div id="computer-result">
+            <img src="" alt="" />
+          </div>
+        </div>
       </div>
     </main>
+
     <footer>
-      <div class="rules-button">
-        <h3>RULES</h3>
-      </div>
-      <div class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by
-        <a href="https://github.com/acha-jr" target="_blank">acha-jr</a>.
+      <div class="rules-button">rules</div>
+      <div class="rules">
+        <div class="rules-content">
+          <div class="head">
+            <h1>RULES</h1>
+            <img src="./images/icon-close.svg" alt="" />
+          </div>
+          <img src="./images/image-rules.svg" alt="" />
+        </div>
       </div>
     </footer>
     <script src="./script.js"></script>
