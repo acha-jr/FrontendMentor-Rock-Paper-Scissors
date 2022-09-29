@@ -1,7 +1,8 @@
 # Frontend Mentor Rock Paper Scissors
 
 # PREVIEW
-![ezgif com-gif-maker](https://user-images.githubusercontent.com/105124616/167292007-7edde2f5-ed37-4c98-b8b3-656cedc730c7.gif)
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/105124616/192917366-da792b10-4d18-45cd-a834-4dc179f1de25.gif)
+
 
 # Challenge from Frontend Mentor 
 https://frontendmentor.io/
